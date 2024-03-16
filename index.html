@@ -5,20 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #profile-picture {
-            width: 200px;
-            height: auto; 
-            margin-top: 20px; 
-       }
-    </style>
-
-    <style>
-        .center {
-            text-align: center;
-            height: 40px;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -32,34 +19,39 @@
             <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
-
-    <img id="profile-picture" src="images/Tonex.jpg" alt="Profile Picture">
-    <div id="profile-text">
-        <div class="center">
-        <h1>BRIXTONE C. ALMARIO</h1>
-        <p>  COMPUTER ENGINEERING TECHNOLOGY</p>
+    <div id="home">
+        <img id="profile-picture" src="images/Tonex.jpg" alt="Profile Picture">
+        <div id="profile-text">
+            <h1>BRIXTONE C. ALMARIO</h1>
+            <p>COMPUTER ENGINEERING TECHNOLOGY</p>
+        </div>
     </div>
     <section id="about">
         <h2>About Me</h2>
         <p>My name is Brixtone C. Almario and I am a second year student majoring in Computer Engineering Technology at Center for Industrial Technology and Enterprise. I have a passion for making Graphic Design and playing Badminton. In my free time, I like to make some Graphic or T-Shirt designs. I am always eager to learn new things. Feel free to explore my portfolio.</p>
     </section>
 
-     <section id="Info">
-        <h2>My Info</h2>
-        <h2>Objectives</h2>
-        <p>To seek new Skills and Experience and to be able to expand and grow my skills for that i can contribute to the company that i will be working.</p>
-
-         <h2>Education</h2>
-        <p>Talamban Elementary School</p>
-        <p>Talmban National High School - High School and SSH</p>
-        <p>CITE Technical Institute, Inc.
-            Purok 2, San Jose, Cebu City
-            Diploma in Computer Engineering Technology (Undergraduate)</p>
-
-        <h2>Skills</h2>
-        <p>Programming Languages: C, C++, Java</p>
-        <p>Web Development: HTML, CSS, JavaScript</p>
-        <p>Graphic and T-Shirt Designs</p>
+    <section id="Info">
+        <h1 id="myInfo">My Info</h1>
+        <div class="info-section">
+            <h2>Objectives</h2>
+            <p>To seek new Skills and Experience and to be able to expand and grow my skills for that i can contribute to the company that i will be working.</p>
+        </div>
+        <div class="info-section">
+            <h2>Education</h2>
+            <p>Talamban Elementary School</p>
+            <p>Talmban National High School - High School and SSH</p>
+            <p>CITE Technical Institute, Inc.
+                Purok 2, San Jose, Cebu City
+                Diploma in Computer Engineering Technology (Undergraduate)
+            </p>
+        </div>
+        <div class="info-section">
+            <h2>Skills</h2>
+            <p>Programming Languages: C, C++, Java</p>
+            <p>Web Development: HTML, CSS, JavaScript</p>
+            <p>Graphic and T-Shirt Designs</p>
+        </div>
 
     </section>
 
@@ -76,14 +68,19 @@
             <p>The teacher would give her/his section a code to enter so that he/she will be given a prompt that he/she is present that specific day.</p>
         </div>
         <h2>WEBSITE</h2>
-         <div class="project">
+        <div class="project">
             <h3>2024 Calendar</h3>
             <p>It shows all the date and day for this year. </p>
+        </div>
     </section>
 
     <footer>
-        <a href="https://github.com/brixalma">Github</a>
-        <a href="https://www.facebook.com/BRIX119904090020/">Facebook</a>
+        <!-- <a href="https://github.com/brixalma">Github</a>
+        <a href="https://www.facebook.com/BRIX119904090020/">Facebook</a> -->
+        <div class="social-icons">
+            <a href="https://github.com/brixalma" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/BRIX119904090020/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
     </footer>
 
     <script src="javascript.js"></script>
