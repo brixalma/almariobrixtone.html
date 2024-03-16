@@ -1,9 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
+:root{
+    --gray: #787d82;
+    --white: #fff;
+}
+*{
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
     background-image: url('images/back.jpg'); /* Changed background-image property */
-    background-size: cover;
+    background-size: cover; 
+    background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 header, nav, section, footer {
@@ -11,15 +19,26 @@ header, nav, section, footer {
 }
 
 header {
-    background-color: #787d82;
+    background-color: var(--gray);
     color: #000000;
     text-align: center;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    background: var(--white);
+    display: inline-block;
+    padding: 1em;
+    border-radius: 20px;
 }
 
 nav ul li {
@@ -32,26 +51,69 @@ nav ul li a {
     color: #333;
 }
 
+#home {
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-text h1,
+#profile-text p{
+    margin-top: 0.2em;
+}
+
+#profile-text p{
+    text-align: center;
+}
+
+#profile-picture {
+    width: 200px;
+    height: auto; 
+    border-radius: 20%; 
+    border: 2px solid black;
+    /* margin-top: 20px; */
+    /* display: block; */
+}
+
+#about{
+    background: var(--white);
+    border-radius: 20px;
+    width: 90%;
+    margin: 2em auto 2em auto;
+}
+
 section {
     margin: 20px 0;
 }
 
-footer {
-    background-color: #787d82;
-    color: #fc0303;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#Info{
+    background: var(--white);
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#myInfo, 
+.info-section{
+    margin-bottom: 1em;
+}
+
+.info-section h2{
+    margin-bottom: 0.3em;
+}
+
+#projects{
+    background: var(--white);
+    border-radius: 20px;
+    width: 90%;
+    margin: 2em auto 2em auto;
 }
 
 .project {
     margin-bottom: 20px;
-}
-
-form {
-    width: 80%;
-    margin: 0 auto;
 }
 
 label {
@@ -59,19 +121,18 @@ label {
     margin-bottom: 5px;
 }
 
-#profile-text {
-    display: inline-block; 
-    margin-left: 20px; 
-    vertical-align: top;
-    
+footer {
+    background-color: var(--gray);
+    padding-bottom: 5px;
 }
 
-#profile-picture {
-    width: 200px;
-    height: auto; 
-    border-radius: 50%; 
-    margin-top: 20px;
-    display: block;
-    margin-left: left; 
-    margin-right: auto;
+footer .social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-icons a{
+    color: #000000;
+    width: 2em;
+    font-size: 2em;
 }
